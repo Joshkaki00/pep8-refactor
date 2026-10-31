@@ -12,7 +12,7 @@ class Pizza:
         bread = 'deep-dish bread'
         cheese = 'mozzarella cheese'
         meat_type = 'Italian sausage'
-        toppings = ['green bell pepper','mushroom', 'chunky tomato sauce', 'onion']
+        toppings = ['green bell pepper', 'mushroom', 'chunky tomato sauce', 'onion']
         return cls (bread, cheese, meat_type, toppings, size)    
     @classmethod
     def create_california_pizza(cls, meat_type, size):

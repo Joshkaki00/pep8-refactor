@@ -15,11 +15,11 @@ class Pizza:
         toppings = ['green bell pepper','mushroom', 'chunky tomato sauce', 'onion']
         return cls (bread, cheese, meat_type, toppings, size)    
     @classmethod
-    def createCalifornia_pizza(ct, meat_type, size):
+    def create_california_pizza(cls, meat_type, size):
         bread = 'thin crust'
-        CHEESE = 'feta cheese'
+        cheese = 'feta cheese'
         toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
-        return ct(bread, CHEESE, meat_Type, toppings, size) 
+        return cls(bread, cheese, meat_type, toppings, size) 
     def printInfo(self):
         print('bread type is: ', obj.bread_type)
         print('cheese type is: ', obj.cheese_type)

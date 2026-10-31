@@ -15,7 +15,7 @@ class Pizza:
         toppings = ['green bell pepper','mushroom', 'chunky tomato sauce', 'onion']
         return class_type (bread, cheese, meatType, toppings, size)    
     @classmethod
-    def createCalifornia_pizza(ct, meat_Type,size):
+    def createCalifornia_pizza(ct, meat_Type, size):
         bread = 'thin crust'
         CHEESE = 'feta cheese'
         toppings =[ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]

@@ -20,13 +20,13 @@ class Pizza:
         cheese = 'feta cheese'
         toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
         return cls(bread, cheese, meat_type, toppings, size) 
-    def printInfo(self):
-        print('bread type is: ', obj.bread_type)
-        print('cheese type is: ', obj.cheese_type)
-        print('meat type is: ', obj.meatType)
+    def print_info(self):
+        print('bread type is: ', self.bread_type)
+        print('cheese type is: ', self.cheese_type)
+        print('meat type is: ', self.meat_type)
         print('Toppings are: ', end='')
-        print(', '.join(map(str, obj.toppings)))
+        print(', '.join(map(str, self.toppings)))
 
     
-myPizza = Pizza.createCalifornia_pizza('chicken', 'large')
-myPizza.printInfo()
+my_pizza = Pizza.create_california_pizza('chicken', 'large')
+my_pizza.print_info()

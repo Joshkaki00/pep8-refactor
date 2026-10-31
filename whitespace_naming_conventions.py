@@ -27,6 +27,6 @@ class Pizza:
         print('Toppings are: ', end='')
         print(', '.join(map(str, self.toppings)))
 
-    
+
 my_pizza = Pizza.create_california_pizza('chicken', 'large')
 my_pizza.print_info()

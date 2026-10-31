@@ -1,7 +1,7 @@
 # By Kami Bigdely
 # PEP8 - whitespaces and variable names.
 class Pizza:
-    def __init__(self, my_bread_type, cheese_type, meat_type, pizza_toppings,size):
+    def __init__(self, my_bread_type, cheese_type, meat_type, pizza_toppings, size):
         self.bread_type = my_bread_type
         self.cheese_type = cheese_type
         self.meat_type = meat_type

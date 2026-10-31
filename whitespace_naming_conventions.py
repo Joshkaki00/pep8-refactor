@@ -11,11 +11,11 @@ class Pizza:
     def create_chicago_pizza(cls, size):
         bread = 'deep-dish bread'
         cheese = 'mozzarella cheese'
-        meatType = 'Italian sausage'
+        meat_type = 'Italian sausage'
         toppings = ['green bell pepper','mushroom', 'chunky tomato sauce', 'onion']
-        return cls (bread, cheese, meatType, toppings, size)    
+        return cls (bread, cheese, meat_type, toppings, size)    
     @classmethod
-    def createCalifornia_pizza(ct, meat_Type, size):
+    def createCalifornia_pizza(ct, meat_type, size):
         bread = 'thin crust'
         CHEESE = 'feta cheese'
         toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]

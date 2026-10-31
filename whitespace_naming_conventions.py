@@ -20,7 +20,7 @@ class Pizza:
         CHEESE = 'feta cheese'
         toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
         return ct(bread, CHEESE, meat_Type, toppings, size) 
-    def printInfo(obj):
+    def printInfo(self):
         print('bread type is: ', obj.bread_type)
         print('cheese type is: ', obj.cheese_type)
         print('meat type is: ', obj.meatType)

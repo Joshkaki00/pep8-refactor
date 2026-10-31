@@ -19,7 +19,7 @@ class Pizza:
         bread = 'thin crust'
         cheese = 'feta cheese'
         toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
-        return cls(bread, cheese, meat_type, toppings, size) 
+        return cls(bread, cheese, meat_type, toppings, size)
     def print_info(self):
         print('bread type is: ', self.bread_type)
         print('cheese type is: ', self.cheese_type)

@@ -8,7 +8,8 @@ class OnBoardTemperatureSensor:
         return 2.7
     def get_temperature(self):
         return self.read_voltage() * OnBoardTemperatureSensor.VOLTAGE_TO_TEMP_FACTOR # [celcius]
-  
+
+
 class CarbonMonoxideSensor:
     VOLTAGE_TO_CO_FACTOR = 0.048
     def __init__(self, temperature_sensor):
@@ -24,7 +25,8 @@ class CarbonMonoxideSensor:
         return 2.3
     def convert_voltage_to_carbon_monoxide_level(voltage, temperature):
         return voltage * CarbonMonoxideSensor.VOLTAGE_TO_CO_FACTOR * temperature
-    
+
+   
 class DisplayUnit:
     def __init__(self):
         self.string = ''
@@ -37,6 +39,7 @@ class CarbonMonoxideDevice():
     def Display(self):
         msg = 'Carbon Monoxide Level is : ' +  str(self.carbonMonoxideSensor.get_carbon_monoxide_level())
         self.display_unit.display(msg)
+
 
 if __name__ == "__main__":
     temp_sensor = OnBoardTemperatureSensor()

@@ -70,14 +70,14 @@ class CarbonMonoxideDevice:
 
     def __init__(self, co_sensor, display_unit):
         """Store the sensor and display unit used by the device."""
-        self.carbonMonoxideSensor = co_sensor
+        self.carbon_monoxide_sensor = co_sensor
         self.display_unit = display_unit
 
-    def Display(self):
+    def display(self):
         """Show the current carbon monoxide level on the display unit."""
         msg = (
             'Carbon Monoxide Level is : '
-            + str(self.carbonMonoxideSensor.get_carbon_monoxide_level())
+            + str(self.carbon_monoxide_sensor.get_carbon_monoxide_level())
         )
         self.display_unit.display(msg)
 
@@ -87,4 +87,4 @@ if __name__ == "__main__":
     co_sensor = CarbonMonoxideSensor(temp_sensor)
     display_unit = DisplayUnit()
     co_device = CarbonMonoxideDevice(co_sensor, display_unit)
-    co_device.Display()
+    co_device.display()

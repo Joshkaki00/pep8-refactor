@@ -8,7 +8,7 @@ class Pizza:
         self.toppings = pizza_toppings
         self.size = size
     @classmethod
-    def Create_ChicagoPizza(class_type, size):
+    def create_chicago_pizza(class_type, size):
         bread = 'deep-dish bread'
         cheese = 'mozzarella cheese'
         meatType = 'Italian sausage'

@@ -18,7 +18,7 @@ class Pizza:
     def create_california_pizza(cls, meat_type, size):
         bread = 'thin crust'
         cheese = 'feta cheese'
-        toppings = [ 'garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
+        toppings = ['garlic', 'spinach', 'broccoli', 'olives', 'red onion', 'red bell pepper' ]
         return cls(bread, cheese, meat_type, toppings, size)
     def print_info(self):
         print('bread type is: ', self.bread_type)

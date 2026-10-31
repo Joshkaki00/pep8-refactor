@@ -1,7 +1,7 @@
 # By Kami Bigdely
 # PEP8 - whitespaces and variable names.
-class pizza:
-    def __init__ (obj, mybread_type,CHEESE_TYPE,meatType,pizza_toppings,size):
+class Pizza:
+    def __init__(obj, mybread_type, CHEESE_TYPE, meatType, pizza_toppings,size):
         obj.bread_type= mybread_type
         obj.cheese_type = CHEESE_TYPE
         obj.meatType= meatType
@@ -28,5 +28,5 @@ class pizza:
         print(', '.join(map(str, obj.toppings)))
 
     
-myPizza = pizza.createCalifornia_pizza('chicken', 'large')
+myPizza = Pizza.createCalifornia_pizza('chicken', 'large')
 myPizza.printInfo()
